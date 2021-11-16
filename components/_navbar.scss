@@ -70,7 +70,7 @@
     &:hover,
     &:focus
     {
-        text-decoration: if($link-hover-decoration == underline, none, null);
+        text-decoration: if($link-active-hover-decoration == underline, none, null);
     }
 }
 
@@ -137,12 +137,13 @@
 
     padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
 
+    transition: $navbar-toggler-transition;
+
     border: $border-width solid transparent; // remove default button style
+    border-radius: $navbar-toggler-border-radius;
     background-color: transparent; // remove default button style
 
     @include font-size($navbar-toggler-font-size);
-    @include border-radius($navbar-toggler-border-radius);
-    @include transition($navbar-toggler-transition);
 
     &:hover
     {
@@ -188,88 +189,80 @@
 {
     @each $breakpoint in map-keys($grid-breakpoints)
     {
-        $next: breakpoint-next($breakpoint, $grid-breakpoints);
-        $infix: breakpoint-infix($next, $grid-breakpoints);
-
-        // stylelint-disable-next-line scss/selector-no-union-class-name
-        &#{$infix}
+        @include resp-min($size)
         {
-            @include media-breakpoint-up($next)
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            .navbar-nav
             {
-                flex-wrap: nowrap;
-                justify-content: flex-start;
+                flex-direction: row;
 
-                .navbar-nav
+                .dropdown-menu
                 {
-                    flex-direction: row;
-
-                    .dropdown-menu
-                    {
-                        position: absolute;
-                    }
-
-                    .nav-link
-                    {
-                        padding-right: $navbar-nav-link-padding-x;
-                        padding-left: $navbar-nav-link-padding-x;
-                    }
+                    position: absolute;
                 }
 
-                .navbar-nav-scroll
+                .nav-link
                 {
-                    overflow: visible;
+                    padding-right: $navbar-nav-link-padding-x;
+                    padding-left: $navbar-nav-link-padding-x;
                 }
+            }
 
-                .navbar-collapse
-                {
-                    display: flex !important; // stylelint-disable-line declaration-no-important
-                    flex-basis: auto;
-                }
+            .navbar-nav-scroll
+            {
+                overflow: visible;
+            }
 
-                .navbar-toggler
-                {
-                    display: none;
-                }
+            .navbar-collapse
+            {
+                display: flex !important; // stylelint-disable-line declaration-no-important
+                flex-basis: auto;
+            }
 
-                .offcanvas-header
-                {
-                    display: none;
-                }
+            .navbar-toggler
+            {
+                display: none;
+            }
 
-                .offcanvas
-                {
-                    position: inherit;
-                    z-index: 1000;
-                    bottom: 0;
+            .offcanvas-header
+            {
+                display: none;
+            }
 
-                    visibility: visible !important; // stylelint-disable-line declaration-no-important
-                    flex-grow: 1;
+            .offcanvas
+            {
+                position: inherit;
+                z-index: 1000;
+                bottom: 0;
 
-                    transform: none;
+                visibility: visible !important; // stylelint-disable-line declaration-no-important
+                flex-grow: 1;
 
-                    border-right: 0;
-                    border-left: 0;
-                    background-color: transparent;
+                transition: none;
+                transform: none;
 
-                    @include transition(none);
-                }
-                .offcanvas-top,
-                .offcanvas-bottom
-                {
-                    height: auto;
+                border-right: 0;
+                border-left: 0;
+                background-color: transparent;
+            }
+            .offcanvas-top,
+            .offcanvas-bottom
+            {
+                height: auto;
 
-                    border-top: 0;
-                    border-bottom: 0;
-                }
+                border-top: 0;
+                border-bottom: 0;
+            }
 
-                .offcanvas-body
-                {
-                    display: flex;
-                    overflow-y: visible;
-                    flex-grow: 0;
+            .offcanvas-body
+            {
+                display: flex;
+                overflow-y: visible;
+                flex-grow: 0;
 
-                    padding: 0;
-                }
+                padding: 0;
             }
         }
     }

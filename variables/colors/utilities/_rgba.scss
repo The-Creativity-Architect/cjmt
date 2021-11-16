@@ -1,19 +1,19 @@
 /* Utilities Text Variables */
-$text-muted-rgba:       rgba(98,98,98);
-$text-rgba:             rgba(0,1,0);
-$body-rgba:             rgba(228,237,244);
-$caption-rgba:          rgba(62,62,62);
-$caption-border-rgba:   rgba(26,26,26);
-$light-rgba:            rgba(192,192,192);
-$dark-rgba:             rgba(26,26,26);
-$input-rgba:            rgba(78,78,78);
-$input-bg-rgba:         rgba(192,192,192);
-$input-border-rgba:     rgba(26,26,26);
-$input-focus-rgba:      rgba(40,40,40);
-$input-focus-bg-rgba:     rgba(228,237,244);
+$text-muted-rgba: rgba(98,98,98);
+$text-rgba: rgba(0,1,0);
+$body-rgba: rgba(228,237,244);
+$caption-rgba: rgba(62,62,62);
+$caption-border-rgba: rgba(26,26,26);
+$light-rgba: rgba(192,192,192);
+$dark-rgba: rgba(26,26,26);
+$input-rgba: rgba(78,78,78);
+$input-bg-rgba: rgba(192,192,192);
+$input-border-rgba: rgba(26,26,26);
+$input-focus-rgba: rgba(40,40,40);
+$input-focus-bg-rgba: rgba(228,237,244);
 $input-focus-border-rgba: rgba(26,26,26);
 
-$utilities-text-rgba:(
+$utilities-text-rgba: (
 text-muted-rgba:          $text-muted-rgba,
 text-rgba:                $text-rgba,
 body-rgba:                $body-rgba,
@@ -30,25 +30,24 @@ input-focus-border-rgba:  $input-focus-border-rgba
 );
 
 /* Utilities Colors */
-$info-rgba:       rgba(65,105,225);
-$success-rgba:    rgba(11,218,81);
-$warning-rgba:    rgba(255,153,102);
-$danger-rgba:     rgba(220,53,69);
-$active-rgba:      rgba(10,186,181);
-$border-rgba:      rgba(98,52,18);
-$danger-rgba:      rgba(220,53,69);
-$invalid-rgba:    rgba(220,53,69);
-$disabled-rgba:    rgba(192,192,192);
-$focus-rgba:      rgba(81,11,218);
-$hover-rgba:      shift-color(rgba(10,186,181), $active-percentage);
-$info-rgba:       rgba(65,105,225);
-$nav-rgba:        rgba(98,52,18);
-$success-rgba:    rgba(11,218,81);
-$valid-rgba:      rgba(11,218,81);
-$table-rgba:      rgba(202,255,255);
-$warning-rgba:    rgba(255,153,102);
-$widget-rgba:     rgba(168,169,173);
-$visited-rgba:    rgba(81,11,218);
+$info-rgba: rgba(65,105,225);
+$success-rgba: rgba(11,218,81);
+$warning-rgba: rgba(255,153,102);
+$danger-rgba: rgba(220,53,69);
+$active-rgba: $primary-color-rgba;
+$border-rgba: rgba(98,52,18);
+$danger-rgba: rgba(220,53,69);
+$invalid-rgba: rgba(220,53,69);
+$disabled-rgba: rgba(192,192,192);
+$focus-rgba: rgba(81,11,218);
+$hover-rgba: shift-color(rgba(10,186,181), $active-percentage);
+$nav-rgba: rgba(98,52,18);
+$valid-rgba: rgba(11,218,81);
+$table-rgba: rgba(202,255,255);
+$widget-rgba: rgba(168,169,173);
+$visited-rgba: rgba(81,11,218);
+$active-border-rgba: $secondary-color-rgba;
+$active-bg-rgba: $accent-color-rgba;
 
 $utilitis-colors-rgba: (
   success-rgba: $success-rgba,

@@ -22,6 +22,13 @@ $enable-important-utilities: true;
   'typography',
   'navbar';
 
+$link-active: color;
+$link-active-border: border-color;
+$link-active-decoration: none;
+$link-active-hover: $hover;
+$link-active-hover-border: $hover-border;
+$link-active-hover-bg: $hover-bg;
+$link-active-hover-decoration: underline;
 
 
 

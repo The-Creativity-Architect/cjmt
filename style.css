@@ -1,11 +1,11 @@
-/* Error: Undefined variable.
+/* Error: expected "}".
  *    ,
- * 19 | $box-shadow: 1.75rem 1.5rem 1.75rem $box-shadow-rgb;
- *    |                                     ^^^^^^^^^^^^^^^
+ * 50 |         > .container-{breakpoint-infix($breakpoint, $container-max-widths){}
+ *    |                                                                             ^
  *    '
- *   variables/_borders.scss 19:37   @import
- *   variables/_variables.scss 21:3  @import
- *   style.scss 7:9                  root stylesheet */
+ *   components/_navbar.scss 50:77  @import
+ *   components.scss 5:3            @import
+ *   style.scss 21:3                root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -15,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 19 \2502  $box-shadow: 1.75rem 1.5rem 1.75rem $box-shadow-rgb;\a    \2502                                      ^^^^^^^^^^^^^^^\a    \2575 \a   variables/_borders.scss 19:37   @import\a   variables/_variables.scss 21:3  @import\a   style.scss 7:9                  root stylesheet";
+  content: 'Error: expected "}".\a    \2577 \a 50 \2502          > .container-{breakpoint-infix($breakpoint, $container-max-widths){}\a    \2502                                                                              ^\a    \2575 \a   components/_navbar.scss 50:77  @import\a   components.scss 5:3            @import\a   style.scss 21:3                root stylesheet';
 }

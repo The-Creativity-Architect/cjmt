@@ -19,13 +19,6 @@ $component-active-color: $active;
 $component-active-bg: $active-bg;
 $component-active-border: $active-border;
 
-$link-active: color;
-$link-active-border: border-color;
-$link-active-decoration: none;
-$link-active-hover: $hover;
-$link-active-hover-border: $hover-border;
-$link-active-hover-bg: $hover-bg;
-$link-active-hover-decoration: underline;
 
 $nav: $brown;
 $border: $brown;
@@ -58,11 +51,3 @@ invalid:      $invalid
 $component-active-color: $active;
 $component-active-bg: $active-bg;
 $component-active-border: $active-border;
-
-$link-active: $active;
-$link-active-border: $active-border;
-$link-active-decoration: none;
-$link-active-hover: $hover;
-$link-active-hover-border: $hover-border;
-$link-active-hover-bg: $active-bg;
-$link-active-hover-decoration: underline;

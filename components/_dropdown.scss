@@ -28,8 +28,8 @@
   background-color: $dropdown-bg;
   background-clip: padding-box;
   border: $dropdown-border-width solid $dropdown-border-color;
-  @include border-radius($dropdown-border-radius);
-  @include box-shadow($dropdown-box-shadow);
+  border-radius: $dropdown-border-radius;
+  box-shadow: $dropdown-box-shadow;
 
   &[data-bs-popper] {
     top: 100%;
@@ -43,7 +43,7 @@
 // this custom property in JS to determine Popper's positioning
 
 @each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
+  @include media($size) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     .dropdown-menu#{$infix}-start {
@@ -54,7 +54,6 @@
         left: 0;
       }
     }
-
     .dropdown-menu#{$infix}-end {
       --bs-position: end;
 
@@ -136,7 +135,7 @@
   font-weight: $font-weight-normal;
   color: $dropdown-link-color;
   text-align: inherit; // For `<button>`s
-  text-decoration: if($link-decoration == none, null, none);
+  text-decoration: $link-active-hover-decoration;
   white-space: nowrap; // prevent links from randomly breaking onto new lines
   background-color: transparent; // For `<button>`s
   border: 0; // For `<button>`s
@@ -145,26 +144,26 @@
   // See https://github.com/twbs/bootstrap/pull/27703
   @if $dropdown-padding-y == 0 {
     &:first-child {
-      @include border-top-radius($dropdown-inner-border-radius);
+      border-top-radius: $dropdown-inner-border-radius;
     }
 
     &:last-child {
-      @include border-bottom-radius($dropdown-inner-border-radius);
+      border-bottom-radius: $dropdown-inner-border-radius;
     }
   }
 
   &:hover,
   &:focus {
     color: $dropdown-link-hover-color;
-    text-decoration: if($link-hover-decoration == underline, none, null);
-    @include gradient-bg($dropdown-link-hover-bg);
+    text-decoration: $link-active-hover-decoration;
+    background-color: $dropdown-link-hover-bg;
   }
 
   &.active,
   &:active {
     color: $dropdown-link-active-color;
     text-decoration: none;
-    @include gradient-bg($dropdown-link-active-bg);
+    background-color: $dropdown-link-hover-bg;
   }
 
   &.disabled,
@@ -186,7 +185,7 @@
   display: block;
   padding: $dropdown-header-padding;
   margin-bottom: 0; // for use with heading elements
-  @include font-size($font-size-sm);
+  font-size: $font-sm;
   color: $dropdown-header-color;
   white-space: nowrap; // as with > li > a
 }
@@ -203,7 +202,7 @@
   color: $dropdown-dark-color;
   background-color: $dropdown-dark-bg;
   border-color: $dropdown-dark-border-color;
-  @include box-shadow($dropdown-dark-box-shadow);
+  box-shadow: $dropdown-dark-box-shadow;
 
   .dropdown-item {
     color: $dropdown-dark-link-color;
@@ -211,13 +210,13 @@
     &:hover,
     &:focus {
       color: $dropdown-dark-link-hover-color;
-      @include gradient-bg($dropdown-dark-link-hover-bg);
+    background-color: $dropdown-link-hover-bg;
     }
 
     &.active,
     &:active {
       color: $dropdown-dark-link-active-color;
-      @include gradient-bg($dropdown-dark-link-active-bg);
+    background-color: $dropdown-link-hover-bg;
     }
 
     &.disabled,

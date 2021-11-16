@@ -43,6 +43,7 @@ xxl: 1400px
 $size: nth($grid-breakpoints, 1);
 $name: nth($grid-breakpoints, 1);
 $declaration: nth($grid-breakpoints, 2);
+$infix: nth($grid-breakpoints, 2);
 
 @function assert-starts-at-zero($grid-breakpoints)
 {

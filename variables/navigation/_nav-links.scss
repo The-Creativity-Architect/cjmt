@@ -1,0 +1,11 @@
+// scss-docs-start nav-variables
+$nav-link-padding-y: $padding-y;
+$nav-link-padding-x: $padding-x;
+$nav-link-font-size: null !default;
+$nav-link-font-weight: null !default;
+$nav-link-color: $nav;
+$nav-link-hover-color: $hover;
+$nav-link-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
+$nav-link-disabled-color: $disabled;
+$nav-link-font-size: 1.25rem;
+$nav-link-line-height: ($base-unit * $line-height-body) * 2;

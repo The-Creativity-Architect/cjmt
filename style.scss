@@ -1,0 +1,189 @@
+
+@import
+  'functions/assert-ascending',
+  'functions/assert-at-zero',
+  'functions/breakpoint';
+
+@import 'variables/variables';
+
+@import
+  'mixins/caret',
+  'mixins/clearfix',
+  'mixins/container',
+  'mixins/grid',
+  'mixins/lists',
+  'mixins/responsive-style',
+  'mixins/utilities',
+  'variables/spacings/breakpoints';
+
+@import
+  'grid',
+  'components';
+
+@import
+  'utils/rfs',
+  'utils/utilities';
+
+@import 'utils/api';
+
+*,
+* ::after,
+* ::before
+{
+    box-sizing: border-box;
+}
+
+div
+{
+    display: flex;
+    float: left;
+    justify-content: space-evenly;
+}
+
+body,
+html
+{
+    float: left;
+    overflow: hidden;
+    align-items: left;
+    justify-content: flex-start;
+
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    margin: 0;
+}
+
+.container,
+body
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container
+{
+    @include make-container;
+    @include make-container-style;
+}
+
+header
+{
+    position: fixed;
+    z-index: $zindex-header;
+    top: 0;
+    right: 0;
+    bottom: $row14;
+    left: 0;
+
+    float: left;
+
+    background-color: $red;
+}
+
+.sidebar-right
+{
+    position: fixed;
+    z-index: $zindex-sidebar;
+    top: $row1;
+    right: $col14;
+    bottom: 0;
+
+    width: $col2;
+    height: $row15;
+
+    border-width: 2;
+    border-style: solid;
+    border-color: $brown;
+}
+
+.sidebar-left
+{
+    position: fixed;
+    top: $row2;
+    bottom: $row1;
+    left: $col14;
+
+    width: $col2;
+    height: $row13;
+
+    border-width: 2;
+    border-style: solid;
+    border-color: $black;
+}
+
+main
+{
+    position: fixed;
+    top: $row1;
+    right: $col1;
+    bottom: 0;
+    left: $col1;
+
+    background-color: $orange;
+
+    zindex: $zindex-main;
+}
+
+footer
+{
+    position: fixed;
+    z-index: $zindex-footer;
+    top: $row15;
+    right: $col1;
+    bottom: 0;
+    left: $col1;
+}
+
+
+.site-header
+{
+    width: $col16;
+    height: $row2;
+    margin: 0 .12rem .12rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: .12rem;
+
+    border-radius: $border-radius;
+}
+
+.main
+{
+    position: fixed;
+    top: $row1;
+    right: $col1;
+    bottom: 0;
+    left: $col1;
+
+    width: $col14;
+    height: $row15;
+    padding-top: $row1;
+    padding-right: $col1;
+    padding-bottom: 9.37%;
+    padding-left: $col1;
+
+    border-width: 2;
+    border-style: solid;
+    border-color: $blue;
+}
+
+.site-footer
+{
+    position: fixed;
+    top: $row15;
+    right: $col1;
+    bottom: 0;
+    left: $col1;
+
+    width: $col14;
+    height: $row1;
+
+    border-width: 2;
+    border-style: solid;
+    border-color: $purple;
+}

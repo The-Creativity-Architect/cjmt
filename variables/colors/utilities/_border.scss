@@ -1,0 +1,30 @@
+/* Utilities Border */
+$active-border: $primary-color;
+$danger-border: $red;
+$disabled-border: $gray;
+$hover-border: $secondary-color;
+$info-border: $blue;
+$success-border: $green;
+$table-border: $teal;
+$warning-border: $orange;
+$widget-border: $silver;
+$visited-border: $purple;
+$nav-border: $border;
+$invalid-border: $danger-border;
+$valid-border: $success-border;
+
+$utilities-border: (
+active-border:     $active-border,
+danger-border:     $danger-border,
+disabled-border:   $disabled-border,
+hover-border:      $hover-border,
+info-border:       $info-border,
+success-border:    $success-border,
+table-border:      $table-border,
+warning-border:    $warning-border,
+widget-border:     $widget-border,
+visited-border:    $visited-border,
+nav-border:        $nav-border,
+invalid-border:    $invalid-border,
+valid-border:      $valid-border
+);

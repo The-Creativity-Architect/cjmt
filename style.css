@@ -1,0 +1,19 @@
+/* Error: Undefined variable.
+ *    ,
+ * 19 | $box-shadow: 1.75rem 1.5rem 1.75rem $box-shadow-rgb;
+ *    |                                     ^^^^^^^^^^^^^^^
+ *    '
+ *   variables/_borders.scss 19:37   @import
+ *   variables/_variables.scss 21:3  @import
+ *   style.scss 7:9                  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 19 \2502  $box-shadow: 1.75rem 1.5rem 1.75rem $box-shadow-rgb;\a    \2502                                      ^^^^^^^^^^^^^^^\a    \2575 \a   variables/_borders.scss 19:37   @import\a   variables/_variables.scss 21:3  @import\a   style.scss 7:9                  root stylesheet";
+}

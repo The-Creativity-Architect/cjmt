@@ -1,201 +1,203 @@
-.col1
-{
-    width: $col1; lex: 0 0 ;
-}
-.col2
+.container .span.col1
 {
     flex: 0 0 ;
 
-    width: $col2;
+    width: 6.25%;
 }
-.col3
+.container .span.col2s
 {
     flex: 0 0 ;
 
-    width: $col3;
+    width: 12.50%;
 }
-.col4
+.container .span.col3
 {
     flex: 0 0 ;
 
-    width: $col4;
+    width: 18.75%;
 }
-.col5
+.container .span.col4
 {
     flex: 0 0 ;
 
-    width: $col5;
+    width: 25%;
 }
-.col6
+.container .span.col5
 {
     flex: 0 0 ;
 
-    width: $col6;
+    width: 31.25%;
 }
-.col7
+.container .span.col6
 {
     flex: 0 0 ;
 
-    width: $col7;
+    width: 37.50%;
 }
-.col8
+.container .span.col7
 {
     flex: 0 0 ;
 
-    width: $col8;
+    width: 43.75%;
 }
-.col9
+.container .span.col8
 {
     flex: 0 0 ;
 
-    width: $col9;
+    width: 50%;
 }
-.col10
+.container .span.col9
 {
     flex: 0 0 ;
 
-    width: $col10;
+    width: 56.25%;
 }
-.col11
+.container .span.col10
 {
     flex: 0 0 ;
 
-    width: $col11;
+    width: 62.50%;
 }
-.col12
+.container .span.col11
 {
     flex: 0 0 ;
 
-    width: $col12;
+    width: 68.75%;
 }
-.col13
+.container .span.col12
 {
     flex: 0 0 ;
 
-    width: $col13;
+    width: 75%;
 }
-.col14
+.container .span.col13
 {
     flex: 0 0 ;
 
-    width: $col13;
+    width: 81.25%;
 }
-.col15
+.container .span.col14
 {
     flex: 0 0 ;
 
-    width: $col15;
+    width: 87.50%;
 }
-.col16
+.container .span.col15
 {
     flex: 0 0 ;
 
-    width: $col16;
+    width: 93.75%;
 }
-.col-auto
+.container .span.col16
+{
+    flex: 0 0 ;
+
+    width: 100%;
+}
+.container .span.col-auto
 {
     flex: 0 0 auto;
 
     width: auto;
 }
 
-.row1
+.container .span.row1
 {
     flex: 0 0 ;
 
-    height: $row1;
+    height: 6.25%;
 }
-.row2
+.container .span.row2
 {
     flex: 0 0 ;
 
-    height: $row2;
+    height: 12.50%;
 }
-.row3
+.container .span.row3
 {
     flex: 0 0 ;
 
-    height: $row3;
+    height: 18.75%;
 }
-.row4
+.container .span.row4
 {
     flex: 0 0 ;
 
-    height: $row4;
+    height: 25%;
 }
-.row5
+.container .span.row5
 {
     flex: 0 0 ;
 
-    height: $row5;
+    height: 31.25%;
 }
-.row6
+.container .span.row6
 {
     flex: 0 0 ;
 
-    height: $row6;
+    height: 37.50%;
 }
-.row7
+.container .span.row7
 {
     flex: 0 0 ;
 
-    height: $row7;
+    height: 43.75%;
 }
-.row8
+.container .span.row8
 {
     flex: 0 0 ;
 
-    height: $row8;
+    height: 50%;
 }
-.row9
+.container .span.row9
 {
     flex: 0 0 ;
 
-    height: $row9;
+    height: 56.25%;
 }
-.row10
+.container .span.row10
 {
     flex: 0 0 ;
 
-    height: $row10;
+    height: 62.50%;
 }
-.row11
+.container .span.row11
 {
     flex: 0 0 ;
 
-    height: $row11;
+    height: 68.75%;
 }
-.row12
+.container .span.row12
 {
     flex: 0 0 ;
 
-    height: $row12;
+    height: 75%;
 }
-.row13
+.container .span.row13
 {
     flex: 0 0 ;
 
-    height: $row13;
+    height: 81.25%;
 }
-.row14
+.container .span.row14
 {
     flex: 0 0 ;
 
-    height: $row13;
+    height: 87.50%;
 }
-.row15
+.container .span.row15
 {
     flex: 0 0 ;
 
-    height: $row15;
+    height: 93.75%;
 }
-.row16
+.container .span.row16
 {
     flex: 0 0 ;
 
-    height: $row16;
+    height: 100%;
 }
-.row-fluid
+.container .span.row-fluid
 {
     flex: 0 0 auto;
 

@@ -1,0 +1,20 @@
+
+$shadow: $gray-700;
+$shadow-active: $gray-500;
+$shadow-hover: $gray-300;
+$shadow-focus: $gray-100;
+$shadow-inset: $white;
+
+$shadow-rgba: $gray-700-rgba;
+$shadow-active-rgba: $gray-500-rgba;
+$shadow-hover-rgba: $gray-300-rgba;
+$shadow-focus-rgba: $gray-100-rgba;
+$shadow-inset-rgba: $white-rgba;
+
+/* BOX SHADOW */
+$box-shadow: 1.75rem 1.5rem 1.75rem $shadow-rgba;
+$box-shadow-sm: 1.25rem 1rem 1.25rem rgba($shadow-rgba, .075);
+$box-shadow-lg: 2.25rem 2rem 2.25rem rgba($shadow-rgba, .175);
+$box-shadow-active: 1.75rem 1.5rem 1.75rem rgba($shadow-active-rgba, .25);
+$box-shadow-hover: inset .25rem .50rem .75rem rgba($shadow-hover-rgba, .075);
+$box-shadow-focus: inset .25rem .50rem .75rem rgba($shadow-focus-rgba, .075) 25%;

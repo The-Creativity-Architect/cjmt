@@ -1,6 +1,6 @@
 $primary-color: $cyan;
 $secondary-color: $yellow;
-$accent-color: $silver;
+$accent-color: $gray-500;
 
 $success: $green;
 $warning: $orange;
@@ -9,5 +9,12 @@ $info: $blue;
 $light: $gray-100;
 $dark: $gray-900;
 
-$box-shadow: $gray-700;
-$text-shadow: $gray-700;
+$shadow: $gray-700;
+
+// Gradient
+//
+// The gradient which is added to components if `$enable-gradients` is `true`
+// This gradient is also added to elements with `.bg-gradient`
+// scss-docs-start variable-gradient
+$gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
+// scss-docs-end variable-gradient

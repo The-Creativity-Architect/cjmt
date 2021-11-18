@@ -1,0 +1,132 @@
+// Components
+$border-width: 1px;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+);
+
+$border-width-md: 2;
+$border-width-lg: 3;
+$border-width-focus: 4;
+$border-width-hover: $border-width-lg;
+
+$border-radius: .95rem;
+$border-radius-sm: .55rem;
+$border-radius-lg: 1.45rem;
+$border-radius-pill: 50rem;
+
+$border-color: $primary-color;
+
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+// scss-docs-start alert-variables
+$alert-padding-y: $base-unit !default;
+$alert-padding-x: $base-unit !default;
+$alert-margin-bottom: 1rem !default;
+$alert-border-radius: $border-radius !default;
+$alert-link-font-weight: $font-weight-bold !default;
+$alert-border-width: $border-width !default;
+$alert-bg-scale: -80% !default;
+$alert-border-scale: -70% !default;
+$alert-color-scale: 40% !default;
+$alert-dismissible-padding-r: $alert-padding-x * 3 !default;
+// 3x covers width of x plus default padding on either side
+// scss-docs-end alert-variables
+
+// Badges
+
+// scss-docs-start badge-variables
+$badge-font-size: .75em !default;
+$badge-font-weight: $font-weight-bold !default;
+$badge-color: $white !default;
+$badge-padding-y: .35em !default;
+$badge-padding-x: .65em !default;
+$badge-border-radius: $border-radius !default;
+// scss-docs-end badge-variables
+
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $primary-color !default;
+$link-decoration: none !default;
+$link-shade-percentage: 20% !default;
+$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration: underline !default;
+
+$stretched-link-pseudo-element: after !default;
+$stretched-link-z-index: 1 !default;
+
+
+
+
+$transition-base: all .2s ease-in-out;
+$transition-fade: opacity .15s linear;
+// scss-docs-start collapse-transition
+$transition-collapse: height .35s ease;
+$transition-collapse-width: width .35s ease;
+// scss-docs-end collapse-transition
+
+
+$caption-font-family: 'Glass Antiqua';
+$figure-caption-font-size: var(--sm) !default;
+$thumbnail-padding: div($spacer, 4) !default;
+$thumbnail-border-radius: $border-radius !default;
+
+// Image thumbnails
+
+// scss-docs-start thumbnail-variables
+$thumbnail-padding: .25rem !default;
+$thumbnail-bg: $body-bg !default;
+$thumbnail-border-width: $border-width !default;
+$thumbnail-border-color: $primary-color !default;
+$thumbnail-border-radius: $border-radius !default;
+$thumbnail-box-shadow: $box-shadow-sm !default;
+// scss-docs-end thumbnail-variables
+
+
+// Figures
+
+// scss-docs-start figure-variables
+$figure-caption-font-size: $small-font-size !default;
+$figure-caption-color: $primary-color !default;
+// scss-docs-end figure-variables
+
+$carousel-control-icon-width: 2rem !default;
+$carousel-control-width: 15% !default;
+$carousel-control-color: $white !default;
+$carousel-control-opacity: .5 !default;
+$carousel-control-hover-opacity: .9 !default;
+$carousel-control-transition: opacity .15s ease !default;
+
+$carousel-indicator-spacer: 3px !default;
+$carousel-indicator-width: 30px !default;
+$carousel-indicator-height: 3px !default;
+$carousel-indicator-hit-area-height: 10px !default;
+$carousel-indicator-opacity: .5 !default;
+$carousel-indicator-active-bg: $active-bg !default;
+$carousel-indicator-active-opacity: 1 !default;
+$carousel-indicator-transition: opacity .6s ease !default;
+
+$carousel-caption-width: 70% !default;
+$carousel-caption-padding-y: 1.25rem !default;
+$carousel-caption-spacer: 1.25rem !default;
+$carousel-caption-color: $caption-text;
+
+$carousel-control-prev-icon-bg: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 16 16\' fill=\'#{$carousel-control-color}\'><path d=\'M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z\'/></svg>') !default;
+$carousel-control-next-icon-bg: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 16 16\' fill=\'#{$carousel-control-color}\'><path d=\'M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z\'/></svg>') !default;
+
+$carousel-transition-duration: .6s !default;
+$carousel-transition: opacity $carousel-transition-duration ease-in-out !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+$carousel-dark-indicator-active-bg: $active;
+$carousel-dark-caption-color: $caption-text;
+$carousel-dark-control-icon-filter: invert(1) grayscale(100) !default;

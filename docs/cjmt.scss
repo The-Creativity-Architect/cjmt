@@ -1,0 +1,47 @@
+
+/* VARIABLES */
+@import 'cjmt-branding';
+@import 'cjmt-variables';
+
+/* FRAMEWORK */
+@import 'cjmt';
+
+/* OPTIONAL BOOTSTRAP */
+@import //'scss/accordian',
+  //'scss/alert',
+  'scss/badge',
+  //'scss/breadcrumb',
+  'scss/button-group',
+  'scss/buttons',
+  'scss/card',
+  'scss/carousel',
+  'scss/close',
+  'scss/containers',
+  'scss/dropdown',
+  //'scss/forms',
+  //'scss/grid',
+  //'scss/helpers',
+  'scss/images',
+  //'scss/list-group',
+  //'scss/modal', // requires transitions
+  'scss/nav',
+  'scss/navbar',  // requires nav
+  //'scss/offcanvas',
+  'scss/pagination',
+  'scss/placeholders',
+  //'scss/popover',
+  'scss/progress',
+  //'scss/spinners',
+  //'scss/tables',
+  //'scss/toasts',
+  //'scss/tooltip',
+  'scss/transitions',
+  'scss/type';
+
+/* PLUGINS */
+@import 'vendor/twbs/bootstrap-icons/bootstrap-icons';
+
+/* OPTIONAL UTILITIES, API */
+//@import 'scss/utilities/api';
+
+/* CUSTOM STYLING */

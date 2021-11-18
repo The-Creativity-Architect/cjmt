@@ -1,8 +1,9 @@
+/* ## Colors =============== */
+
 @import
   'colors/variables',
-  'colors/theme-color',
-  'colors/rgba',
-  'colors/color-maps';
+  'colors/color-contrast',
+  'colors/rgba';
 
 @import
   'colors/utilities/colors',
@@ -10,3 +11,7 @@
   'colors/utilities/border',
   'colors/utilities/bg',
   'colors/utilities/rgba';
+
+@import
+  'colors/gradients',
+  'colors/box-shadows';

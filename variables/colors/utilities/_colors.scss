@@ -19,15 +19,24 @@ $component-active-color: $active;
 $component-active-bg: $active-bg;
 $component-active-border: $active-border;
 
+$caption-text: $gray-600;
+$caption-border: $gray-900;
+$caption-bg: $gray-200;
+
+$caption-colors: (
+  caption-text: $caption-text,
+  caption-border: $caption-border,
+  caption-bg: $caption-bg,
+) !default;
+
 
 $nav: $brown;
 $border: $brown;
-$nav-border: $border;
 $divider: $border;
 $separator: $border;
 $visited: $purple;
 $table: $teal;
-$widget: $silver;
+$widget: $gray-500;
 
 $valid: $green;
 $invalid: $red;
@@ -38,7 +47,6 @@ disabled:     $disabled,
 hover:        $hover,
 nav:          $nav,
 border:       $border,
-nav-border:   $nav-border,
 divider:      $divider,
 separator:    $separator,
 visited:      $visited,
@@ -47,7 +55,3 @@ widget:       $widget,
 valid:        $valid,
 invalid:      $invalid
 );
-
-$component-active-color: $active;
-$component-active-bg: $active-bg;
-$component-active-border: $active-border;

@@ -13,7 +13,7 @@ $base-font: 'Raleway';
 $code-font: 'Courier New';
 
 $body-bg: #000100;
-$body-text: #e4edf4;
+$body: #e4edf4;
 $body-text-align: null;
 
 $paragraph-margin-bottom: 1rem;
@@ -41,12 +41,11 @@ $font-lg: calc($font-size-base * 1.15);
 $font-xl: calc($font-size-base * 1.25);
 $font-xxl: calc($font-size-base * 1.50);
 
-$font-weight-lighter: lighter !default;
-$font-weight-light: 300 !default;
-$font-weight-normal: 400 !default;
-$font-weight-bold: 700 !default;
-$font-weight-bolder: bolder !default;
-$font-weight-base: $font-weight-normal !default;
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
 
 $font-weight-base: $font-weight-normal;
 
@@ -70,23 +69,16 @@ $line-height-body: $line-height-base;
 $heading-base-unit: 1.25vh;
 // scss-docs-end font-variables
 
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
-// scss-docs-end font-variables
-
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
-) !default;
+  h1: $heading-base-unit * 5,
+  h2: $heading-base-unit * 4.5,
+  h3: $heading-base-unit * 4,
+  h4: $heading-base-unit * 3.5,
+  h5: $heading-base-unit * 3,
+  h6: $heading-base-unit * 2.5
+);
+// scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
 $headings-margin-bottom: $spacer * .5;
@@ -119,7 +111,7 @@ $small-font-size: sm;
 
 $sub-sup-font-size: xs;
 
-$text-muted: $silver;
+$text-muted: $gray-500;
 
 $initialism-font-size: sm;
 

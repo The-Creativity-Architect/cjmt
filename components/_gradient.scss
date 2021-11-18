@@ -1,0 +1,44 @@
+.border-gradient-brown
+{
+    border-width: lg;
+    border-style: solid;
+    border-radius: $border-radius-lg;
+    -o-border-image: $gradient-brown 10% round;
+       border-image: $gradient-brown 10% round;
+}
+
+.border-gradient-primary
+{
+    border-width: lg;
+    border-style: solid;
+    border-radius: $border-radius-lg;
+    -o-border-image: gradient-primary 10% round;
+       border-image: gradient-primary 10% round;
+}
+
+.border-gradient-white
+{
+    border-width: lg;
+    border-style: solid;
+    border-radius: $border-radius-lg;
+    -o-border-image: $gradient-white, 10% round;
+       border-image: $gradient-white, 10% round;
+}
+
+.border-gradient-theme
+{
+    border-width: lg;
+    border-style: solid;
+    border-radius: $border-radius-lg;
+    -o-border-image: $gradient 10% round;
+       border-image: $gradient 10% round;
+}
+
+.border-gradient-yellow
+{
+    border-width: lg;
+    border-style: solid;
+    border-radius: $border-radius-lg;
+    -o-border-image: $gradient-yellow 10% round;
+       border-image: $gradient-yellow 10% round;
+}

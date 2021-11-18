@@ -47,5 +47,32 @@ $info-rgba: rgba(65,105,225);
 $light-rgba: rgba(192,192,192);
 $dark-rgba: rgba(26,26,26);
 
-$box-shadow-rgba: $gray-700-rgba;
-$text-shadow-rgba: $gray-700-rgba;
+$shadow-rgba: $gray-700-rgba;
+$shadow-inset-rgba: $white-rgba;
+
+$color-rgba: (
+  teal-rgba:    $teal-rgba,
+  yellow-rgba:  $yellow-rgba,
+  red-rgba:     $red-rgba,
+  orange-rgba:  $orange-rgba,
+  green-rgba:   $green-rgba,
+  blue-rgba:    $blue-rgba,
+  indigo-rgba:  $indigo-rgba,
+  purple-rgba:  $purple-rgba,
+  cyan-rgba:    $cyan-rgba,
+  pink-rgba:    $pink-rgba,
+  white-rgba:   $white-rgba,
+  black-rgba:   $black-rgba,
+  brown-rgba:   $brown-rgba
+);
+
+$theme-colors-rgba: (
+primary-color-rgba:   $primary-color-rgba,
+secondary-color-rgba: $secondary-color-rgba,
+accent-color-rgba:    $accent-color-rgba,
+success-rgba:         $success-rgba,
+warning-rgba:         $warning-rgba,
+danger-rgba:          $danger-rgba,
+info-rgba:            $info-rgba,
+dark-rgba:            $dark-rgba
+);

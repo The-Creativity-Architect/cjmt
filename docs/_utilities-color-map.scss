@@ -1,0 +1,27 @@
+200 $gray-200,
+disabled-bg: $gray-300,
+
+$disabled: $gray-700,
+$focus: $gray-800,
+
+
+
+
+
+##COLORS WITHOUT UTILITIES##
+pink
+yellow
+cyan
+gray-200
+
+$framework-colors: (
+framework-primary:        $framework-primary,
+framework-secondary:      $framework-secondary,
+framework-accent:         $framework-accent
+);
+
+$theme-colors: (
+primary: $primary,
+secondary: $secondary,
+accent: $accent
+) !default;

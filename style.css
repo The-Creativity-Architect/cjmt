@@ -1,16 +1,10 @@
-/* Error: No argument named $breakpoint.
- *    ,--> components/_containers.scss
- * 18 |         @include media-breakpoint-up($name, $breakpoint: $grid-breakpoints)
- *    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 50 |   'mixins/breakpoints',
+ *    |   ^^^^^^^^^^^^^^^^^^^^
  *    '
- *    ,--> tools/mixins/_breakpoints.scss
- * 61 | @mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
- *    |        =========================================================== declaration
- *    '
- *   components/_containers.scss 18:9  media-breakpoint-up()
- *   components/_containers.scss 18:9  @import
- *   components.scss 7:3               @import
- *   style.scss 15:3                   root stylesheet */
+ *   tools/_mixins.scss 50:3  @import
+ *   style.scss 9:9           root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -20,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: No argument named $breakpoint.\a    \250c \2500 \2500 > components/_containers.scss\a 18 \2502          @include media-breakpoint-up($name, $breakpoint: $grid-breakpoints)\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a    \2575 \a    \250c \2500 \2500 > tools/mixins/_breakpoints.scss\a 61 \2502  @mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {\a    \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a    \2575 \a   components/_containers.scss 18:9  media-breakpoint-up()\a   components/_containers.scss 18:9  @import\a   components.scss 7:3               @import\a   style.scss 15:3                   root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 50 \2502    'mixins/breakpoints',\a    \2502    ^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   tools/_mixins.scss 50:3  @import\a   style.scss 9:9           root stylesheet";
 }

@@ -1,6 +1,10 @@
 /**
  * Root Media Query Variables
  */
+
+ $default-width: 38.125rem;
+ $max-content-width: 1240px;
+
 :root
 {
     $responsive-base: 1.26vw;
@@ -16,7 +20,7 @@
     :root
     {
         $responsive-base: 1.26vw;
-        $responsive-aligndefault-width: min(calc(100vw - 4vw) * $responsive-base), #{$default_width};
+        $responsive-aligndefault-width: min(calc(100vw - 4vw) * $responsive-base), #{$default-width};
         $responsive-alignwide-width: calc(100vw - 4vw) * $responsive-base;
         $responsive-alignright-margin: min(calc(.5 * 100vw) - $responsive-base);
         $responsive-alignleft-margin: calc(.5 * (100vw - $responsive-base));
@@ -28,8 +32,8 @@
     :root
     {
         $responsive-base: 1.26vw;
-        $responsive-aligndefault-width: min(calc(100vw - 8 * $responsive-base)), #{$default_width};
-        $responsive-alignwide-width: min(calc(100vw - 8 * $responsive-base)), #{$max_content_width};
+        $responsive-aligndefault-width: min(calc(100vw - 8 * $responsive-base)), #{$default-width};
+        $responsive-alignwide-width: min(calc(100vw - 8 * $responsive-base)), #{$max-content-width};
     }
 }
 
@@ -38,8 +42,8 @@
  */
 
 $responsive-base: 1.26vw;
-$responsive-aligndefault-width: min(calc(100vw - 8 * $responsive-base)), #{$default_width};
-$responsive-alignwide-width: min(calc(100vw - 8 * $responsive-base)), #{$max_content_width};
+$responsive-aligndefault-width: min(calc(100vw - 8 * $responsive-base)), #{$default-width};
+$responsive-alignwide-width: min(calc(100vw - 8 * $responsive-base)), #{$max-content-width};
 %responsive-aligndefault-width
 {
     max-width: $responsive-aligndefault-width;

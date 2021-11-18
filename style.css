@@ -1,10 +1,13 @@
-/* Error: Can't find stylesheet to import.
+/* Error: expected selector.
  *    ,
- * 50 |   'mixins/breakpoints',
- *    |   ^^^^^^^^^^^^^^^^^^^^
+ * 31 |                     .container-$name{
+ *    |                                ^
  *    '
- *   tools/_mixins.scss 50:3  @import
- *   style.scss 9:9           root stylesheet */
+ *   components/_containers.scss 31:32         @content
+ *   tools/mixins/_media-breakpoint.scss 13:5  media-breakpoint-up()
+ *   components/_containers.scss 18:9          @import
+ *   components.scss 7:3                       @import
+ *   style.scss 15:3                           root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +17,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 50 \2502    'mixins/breakpoints',\a    \2502    ^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   tools/_mixins.scss 50:3  @import\a   style.scss 9:9           root stylesheet";
+  content: "Error: expected selector.\a    \2577 \a 31 \2502                      .container-$name{\a    \2502                                 ^\a    \2575 \a   components/_containers.scss 31:32         @content\a   tools/mixins/_media-breakpoint.scss 13:5  media-breakpoint-up()\a   components/_containers.scss 18:9          @import\a   components.scss 7:3                       @import\a   style.scss 15:3                           root stylesheet";
 }

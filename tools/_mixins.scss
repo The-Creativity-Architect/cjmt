@@ -17,7 +17,9 @@
   'mixins/reset-text',
   'mixins/text-truncate',
   'mixins/responsive-style',
-  'mixins/responsiveness';
+  'mixins/responsiveness',
+  'mixins/media-breakpoint',
+  'mixins/media-query';
 
 // Utilities
 @import 'mixins/utilities';
@@ -47,7 +49,5 @@
   'mixins/clearfix',
   'mixins/grid',
   'mixins/grid-breakpoints',
-  'mixins/breakpoints',
   'mixins/container',
-  'mixins/responsive-breakpoints',
-  'mixins/media-query';
+  'mixins/responsive-breakpoints';

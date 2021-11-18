@@ -31,13 +31,20 @@ $max_content_width: 1320px;
 $container-padding-x: $grid-gutter-width * .5;
 $container-padding-y: $grid-gutter-width;
 
+$grid-breakpoints-xs: 0;
+$grid-breakpoints-sm: 576px;
+$grid-breakpoints-md: 768px;
+$grid-breakpoints-lg: 992px;
+$grid-breakpoints-xl: 1200px;
+$grid-breakpoints-xxl: 1400px;
+
 $grid-breakpoints: (
-xs: 0,
-sm: 576px,
-md: 768px,
-lg: 992px,
-xl: 1200px,
-xxl: 1400px
+xs: $grid-breakpoints-xs,
+sm: $grid-breakpoints-sm,
+md: $grid-breakpoints-md,
+lg: $grid-breakpoints-lg,
+xl: $grid-breakpoints-xl,
+xxl: $grid-breakpoints-xxl
 );
 
 $size: nth($grid-breakpoints, 1);

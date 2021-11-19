@@ -31,26 +31,33 @@ $max_content_width: 1320px;
 $container-padding-x: $grid-gutter-width * .5;
 $container-padding-y: $grid-gutter-width;
 
-$grid-breakpoints-xs: 0;
-$grid-breakpoints-sm: 576px;
-$grid-breakpoints-md: 768px;
-$grid-breakpoints-lg: 992px;
-$grid-breakpoints-xl: 1200px;
-$grid-breakpoints-xxl: 1400px;
+$grid-breakpoint-xs: xs;
+$grid-breakpoint-sm: sm;
+$grid-breakpoint-md: md;
+$grid-breakpoint-lg: lg;
+$grid-breakpoint-xl: xl;
+$grid-breakpoint-xxl: xxl;
 
-$grid-breakpoints: (
-xs: $grid-breakpoints-xs,
-sm: $grid-breakpoints-sm,
-md: $grid-breakpoints-md,
-lg: $grid-breakpoints-lg,
-xl: $grid-breakpoints-xl,
-xxl: $grid-breakpoints-xxl
+
+$grid-breakpoint: (
+xs: $grid-breakpoint-xs,
+sm: $grid-breakpoint-sm,
+md: $grid-breakpoint-md,
+lg: $grid-breakpoint-lg,
+xl: $grid-breakpoint-xl,
+xxl: $grid-breakpoint-xxl
 );
 
-$size: nth($grid-breakpoints, 1);
-$name: nth($grid-breakpoints, 1);
-$declaration: nth($grid-breakpoints, 2);
-$infix: nth($grid-breakpoints, 2);
+$grid-breakpoints: (
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px
+);
+
+
 
 @function assert-starts-at-zero($grid-breakpoints)
 {
@@ -99,3 +106,8 @@ $breakpoints: (
 );
 
 /* -------------------------------------------------------------------------- */
+
+$size: nth($grid-breakpoints, 1);
+$name: nth($grid-breakpoints, 1);
+$declaration: nth($grid-breakpoint, 2);
+$infix: breakpoint-infix($breakpoints, $grid-breakpoint);

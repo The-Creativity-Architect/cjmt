@@ -28,7 +28,7 @@
             {
                 @if ($extend-breakpoint)
                 {
-                    .container#{breakpoint-infix($name, $grid-breakpoints)}
+                    .container-#{$breakpoint}-infix-($name, $grid-breakpoints)
                     {
                         @extend %responsive-container-#{$breakpoint};
                     }

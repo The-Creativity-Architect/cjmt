@@ -1,12 +1,14 @@
-// Utility mixins and functions for evaluating source code across our variables, maps, and mixins.
+// Utility mixins and functions for evaluating source code across variables, maps, and mixins.
 
 @import
   'functions/assert-ascending',
   'functions/assert-at-zero',
-  'functions/colors',
-  'functions/negativify-map',
-  'functions/sass-maps',
-  'functions/replace-string',
+  'functions/map-loop',
+  'functions/breakpoint',
+  'functions/color-contrast',
   'functions/escape-svg',
-  //'functions/color-contrast',
-  'functions/valid-calculations';
+  'functions/negativify-map',
+  'functions/replace-string',
+  'functions/sass-maps',
+  'functions/valid-calculations',
+  'functions/varify';

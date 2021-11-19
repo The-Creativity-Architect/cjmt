@@ -1,7 +1,7 @@
 /*Ascending*/
 /*Used to evaluate Sass maps like our grid breakpoints.*/
 
-@mixin _assert-ascending($map, $map-name) {
+@mixin assert-ascending($map, $map-name) {
   $prev-key: null;
   $prev-num: null;
   @each $key, $num in $map {
@@ -15,4 +15,8 @@
     $prev-key: $key;
     $prev-num: $num;
   }
+}
+
+@mixin assert-ascending($grid-breakpoints) {
+  @include assert-ascending($map, $map-name);
 }

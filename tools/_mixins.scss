@@ -11,15 +11,14 @@
 // Helpers
 @import
   'mixins/color-scheme',
+//  'mixins/deprecated',
   'mixins/image',
+  'mixins/media-breakpoint',
+  'mixins/media-query',
   'mixins/resize',
-  'mixins/visually-hidden',
   'mixins/reset-text',
   'mixins/text-truncate',
-  'mixins/responsive-style',
-  'mixins/responsiveness',
-  'mixins/media-breakpoint',
-  'mixins/media-query';
+  'mixins/visually-hidden';
 
 // Utilities
 @import 'mixins/utilities';
@@ -30,11 +29,12 @@
 @import
   'mixins/buttons',
   'mixins/caret',
-  'mixins/pagination',
+  'mixins/forms',
   'mixins/lists',
   'mixins/list-group',
-  'mixins/placeholder';
-//@import 'mixins/forms',
+  'mixins/pagination',
+  'mixins/placeholder',
+  'mixins/resize';
 //@import 'mixins/table-variants',
 
 // Skins
@@ -46,8 +46,13 @@
 
 // Layout
 @import
+  'mixins/breakpoints',
+  'mixins/container',
   'mixins/clearfix',
   'mixins/grid',
-  'mixins/grid-breakpoints',
   'mixins/container',
-  'mixins/responsive-breakpoints';
+  'mixins/grid-breakpoints',
+  'mixins/grid',
+  'mixins/responsive-breakpoints',
+  'mixins/responsive-style',
+  'mixins/responsiveness';

@@ -23,3 +23,12 @@
     $gutter-x: $spacer;
     $gutter-y: $spacer;
 }
+
+@mixin make-container-style()
+{
+    border-width: $border-width-focus;
+    border-style: solid;
+    border-style: hidden;
+    border-color: $border-color;
+    border-radius: $border-radius;
+}

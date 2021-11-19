@@ -18,7 +18,6 @@ $input-focus-border:  $gray-100;
 $utilities-text-colors:(
 text-muted:         $text-muted,
 text:               $text,
-body:               $body,
 dark:               $dark
 );
 
@@ -27,6 +26,5 @@ input:              $input,
 input-bg:           $input-bg,
 input-border:       $input-border,
 input-focus:        $input-focus,
-input-focus-bg:     $input-focus-bg,
 input-focus-border: $input-focus-border
 );

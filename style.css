@@ -1,12 +1,18 @@
-/* Error: (xs: xs, sm: sm, md: md, lg: lg, xl: xl, xxl: xxl) isn't a valid CSS value.
- *     ,
- * 113 | $infix: breakpoint-infix($breakpoints, $grid-breakpoint);
- *     |                                        ^^^^^^^^^^^^^^^^
- *     '
- *   variables/spacings/_grid.scss 113:40  @import
- *   variables/_spacing.scss 25:9          @import
- *   variables/_variables.scss 20:3        @import
- *   style.scss 3:9                        root stylesheet */
+/* Error: Missing argument $value.
+ *   ,--> tools/functions/_map-loop.scss
+ * 13|     $_map: map-loop($_map, ($key: call(get-function($func)), $_args:()));
+ *   |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *   '
+ *   ,--> tools/functions/color-contrast/_rgb.scss
+ * 2 | @function to-rgb($value) {
+ *   |           ============== declaration
+ *   '
+ *   tools/functions/_map-loop.scss 13:35    to-rgb()
+ *   tools/functions/_map-loop.scss 13:35    map-loop()
+ *   variables/colors/_variables.scss 91:20  @import
+ *   variables/_colors.scss 4:3              @import
+ *   variables/_variables.scss 19:3          @import
+ *   style.scss 3:9                          root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -16,5 +22,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: (xs: xs, sm: sm, md: md, lg: lg, xl: xl, xxl: xxl) isn't a valid CSS value.\a     \2577 \a 113 \2502  $infix: breakpoint-infix($breakpoints, $grid-breakpoint);\a     \2502                                         ^^^^^^^^^^^^^^^^\a     \2575 \a   variables/spacings/_grid.scss 113:40  @import\a   variables/_spacing.scss 25:9          @import\a   variables/_variables.scss 20:3        @import\a   style.scss 3:9                        root stylesheet";
+  content: "Error: Missing argument $value.\a   \250c \2500 \2500 > tools/functions/_map-loop.scss\a 13\2502      $_map: map-loop($_map, ($key: call(get-function($func)), $_args:()));\a   \2502                                    ^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > tools/functions/color-contrast/_rgb.scss\a 2 \2502  @function to-rgb($value) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   tools/functions/_map-loop.scss 13:35    to-rgb()\a   tools/functions/_map-loop.scss 13:35    map-loop()\a   variables/colors/_variables.scss 91:20  @import\a   variables/_colors.scss 4:3              @import\a   variables/_variables.scss 19:3          @import\a   style.scss 3:9                          root stylesheet";
 }

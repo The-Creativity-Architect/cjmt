@@ -1,14 +1,15 @@
-
+@import 'tools/functions';
 
 @import 'variables/variables';
 @import
   'docs/cjmt-brand/colors',
   'docs/cjmt-brand/fonts/fonts',
   'docs/cjmt-brand/typography';
-@import 'tools/functions';
 @import 'tools/mixins';
-@import 'tools/root';
-@import 'tools/utilities';
+@import 'tools/utils/utilities';
+
+@import 'tools/root',
+'tools/reboot';
 
 @import
   'structure/grid/style-grid',
@@ -19,8 +20,6 @@
 @import
   'tools/utils/rfs',
   'tools/utils/api';
-
-@import 'tools/media-query';
 
 .bg-front-page
 {

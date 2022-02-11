@@ -30,7 +30,7 @@
     "get-size": "^2.0.3",
     "isotope-layout": "^3.0.6",
     "masonry-layout": "^4.2.2",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.15",
     "npm-run-all": "^4.1.5",
     "outlayer": "^2.1.1",

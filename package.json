@@ -31,7 +31,7 @@
     "isotope-layout": "^3.0.6",
     "masonry-layout": "^4.2.2",
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.20",
     "npm-run-all": "^4.1.5",
     "outlayer": "^2.1.1",
     "postcss": "^8.3.11",
